@@ -1,0 +1,50 @@
+Pregunta 1 (5 pts) 
+¿Cuál es la complejidad Big-O de insertarOrdenado que implementaste? Justifica tu respuesta. 
+
+Es de complejidad O(n) porque recorre la lista desde la cabeza (head) para encontrar la
+posición correcta donde agregar el nuevo nodo según la lista.
+Si se diera el caso de que se inserta al final, al inicio o esta vacia, seria de complejidad O(1).
+Si se agrega en medio, lo que puede pasar regularmente, seria O(n).
+
+--------------------------------------------------------------------------------------------------
+Pregunta 2 (5 pts) 
+Para cada una de las siguientes operaciones, indica si sería más eficiente usar un Array o una 
+Lista Enlazada y por qué: 
+
+- Buscar al estudiante con el carnet 202300001
+Sería más eficiente usar un Array, esto porque permite buscar en una complejidad mejor O(log n), que 
+es la complejidad usual de este tipo. En cambio, una lista enlazada es de complejidad O(n), esto
+porque, a diferencia de un Array, no puede buscar por un numero guía, es decir, un índice.
+
+- Agregar 500 estudiantes nuevos al inicio del registro 
+Seria más eficiente la lista enlazada, ya que, si es de complejidad O(1) por estudiante, el total 
+seria de complejidad O(500). En cambio el Array seria de complejidad O(500 * n), lo que aumenta 
+significativamente la complejidad algorítmica.
+
+- Acceder directamente al 3er estudiante de la lista 3 
+Sería más eficiente el Array, esto, porque tiene un numero guía, un índice que le indique dónde 
+está el estudiante en el Arreglo, esto seria de complejidad O(1).
+
+
+--------------------------------------------------------------------------------------------------
+Pregunta 3 (10 pts) 
+Dibuja (a mano) la memoria Heap mostrando cómo quedan los nodos después de ejecutar estas 
+instrucciones. Indica claramente los valores de dato, next y de head: 
+ListaEstudiantes lista = new ListaEstudiantes(); 
+lista.agregarInicio("202300001", "Ana", 85.0); 
+lista.agregarInicio("202300002", "Luis", 90.0); 
+lista.agregarFinal("202300003", "María", 78.0); 
+lista.eliminarPorCarnet("202300001");
+
+
+
+
+
+
+
+
+
+
+
+
+
